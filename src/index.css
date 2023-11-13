@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+  /* font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+a{
+  text-decoration: none !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* dropdown of navbar items */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 27px;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .activeButtonDash {
+  visibility: visible;
+}
+.contact:hover .activeButtonDash {
+  visibility: visible;
+}
+/* active button */
+.activeButtonDash {
+  font-weight: 900;
+  color: green;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+/* home */
+.galleryRow{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100vh;
+  grid-gap: 1rem !important;
+  
+}
+.galleryColumn img{
+
+  width: 100% !important;
+}
+/* introToINDIVM */
+.introToINDIVM {
+  background-color: #f7f7f7;
+}
+.introToINDIVM .solar {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ececec;
+  font-family: Poppins;
+  position: absolute;
+  width: 60%;
+  transform: translate(80px, 60px);
+  z-index: 1;
+}
+/* .introToINDIVM .container div div{
+  z-index: 1;
+  position: absolute;
+  transform: translate(200px,200px);
+  font-weight: 900;
+}
+.introToINDIVM .container div p{
+  color: red;  
+}
+
+ */
+.investingIsClean {
+  width: 65%;
+  z-index: 100;
+  margin: 0 !important;
+  text-align: justify;
+  position: relative;
+  transform: translate(200px, 200px);
+}
+.learnMoreBtn {
+  border: 0;
+  background-color: #57b33e;
+  padding: 10px 30px;
+  font-weight: bold;
+  color: white;
+}
+.learnMoreBtn:hover {
+  background-color: #ff7029;
+}
+.contactWhatsappBtn:hover {
+  color: #ff7029;
+}
+/* about */
+.about {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ececec;
+  font-family: Poppins;
+  position: absolute;
+}
+.aboutContainer {
+  padding: 100px 0px 0px 75px;
+  z-index: 1;
+  position: absolute;
+  width: 40%;
+}
+.fa-circle-down:hover {
+  color: #57b33e;
+}
+.aboutDownlaodBtn button {
+  background-color: white;
+
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.aboutDownlaodBtn i {
+  align-items: center;
+}
+.megawattsOfCapacity {
+  width: 230px;
+  position: absolute;
+  transform: translate(35px, -145px);
+  width: 200px;
+}
+/* why us */
+.whyUsData {
+  padding: 1.5em !important;
+}
+.whyUsData:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.enhancedServices {
+  transform: translate(0px, 0px);
+}
+.man-worker-firld-by-solar {
+  transform: translate(0px, 30px);
+}
+.group-people-working-out-business-plan-office {
+  transform: translate(0px, -20px);
+}
+.maintenanceServices {
+  transform: translate(0px, 20px);
+}
+/* works projects */
+.works {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ececec;
+  font-family: Poppins;
+}
+.recentProjects {
+  margin-top: 100px !important;
+  height: 100vh!important;
+  background-color: #f8f8f8;
+}
+.recentProjectsHeading {
+  transform: translate(0px,90px);
+}
+.works{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ececec;
+  font-family: Poppins;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width:100vw;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+}
+.projectGallery{
+  margin-top: 120px!important;
+}
+.projectGallery a:hover{
+  background-color: #57b33e;
+  cursor: pointer;
+}
+.projectGallery img{
+  
+  filter: grayscale(0);
+  transition: 0.5s ease-in-out;
+}
+.projectGallery a:hover img{
+  filter: grayscale(1);
+  transition: 0.5s ease-in-out;
+}
+/* clients */
+.clients{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ececec;
+  font-family: Poppins;
+  position: absolute;
+  transform: translate(130px,30px);
+}
+.someFacts{
+  width: 570px;
+  height: 636px;
+  background-color: #1f242c;
+  position: absolute;
+  z-index: 6;
+  transform: translate(750px,230px);
+}
+.clientbody{
+  display: block;
+  height: 100vh !important;
+  position: absolute;
+}
+.clientReviewing{
+  position: absolute;
+  z-index: 5;
+transform: translate(180px,160px);
+}
+.someFactsPages{
+  position: absolute;
+  z-index: 6!important;
+
+  transform: translate(437px,96px);
+}
+.turbineBackground{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.say{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ececec;
+  font-family: Poppins;
+  position: absolute;
+  transform: translate(700px,760px);
+}
+/* .turbineSketch{
+  width: 400px;
+  position: relative;
+  transform: translate(0px,500px);
+  left: 0;
+  z-index: 1;
+} */
+
+/* weAreHere */
+.weAreHere{
+  margin-top: 140vh;
+  height: 20vh;
+  z-index: 1;
+}
+.parallax {
+  /* The image used */
+  background-image: url('../src/img/world\ map.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*  */
+.recentProjectsHeading{
+  height: 200px;
+}
+.someBasics{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ececec;
+  font-family: Poppins;
+  font-size: 10rem;
+  position: absolute;
+  z-index: 1;
+}
+
+/* //footer */
+.footer{
+  background-color: #1f242c;
+  padding: 5rem;
+}
+
+
+/* contactUsTag */
+.contactUsTag{
+  justify-content: center;
+}
+.contactUsTag .parallax{
+  width: 75%;
+  margin: 4rem 0;
+  /* background: transparent; */
+  background-color: rgba(93, 254, 130, 0.5);
+  /* background-color: #57b33e; */
+}
+
+.contactUsIntro,.productsIntro{
+  background-image: url('../src/img/bgForComponents.png');
+  
+  height: 45vh;
+}
+.contactUsBody{
+  height: 100vh;
+}
+.galleryIntro{
+  height: 45vh;
+  
+  background-image: url('../src/img/bgForComponents.png');
+}
+.gallery{
+  height: 500vh;
+}
+.productSolarPanel{
+  height: 45vh;
+  background-image: url('../src/img/bgForComponents.png');
+}
+
+/* send btn */
+#send{
+  
+}
