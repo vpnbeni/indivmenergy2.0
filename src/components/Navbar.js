@@ -31,8 +31,9 @@ export default function Navbar() {
                                     About Us
                                 </Link>
                             </li>
+
                             <li className="nav-item d-flex align-item-center justify-content-center">
-                                <div style={{margin:'auto'}} className="nav-link mx-2 contact fw-bold" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div style={{ margin: 'auto' }} className="nav-link mx-2 contact fw-bold" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span className="activeButtonDash ">
                                         <i className="fa-solid fa-minus fa-lg"></i>
                                     </span>
@@ -42,9 +43,19 @@ export default function Navbar() {
                                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li><Link to={'/solarPanel'} className="dropdown-item" >Solar Panel</Link></li>
 
-                                        <li><Link  to={'/liBattery'} className="dropdown-item" >Lithium Battery</Link></li>
+                                        <li><Link to={'/liBattery'} className="dropdown-item" >Lithium Battery</Link></li>
                                         <li><Link to={'/solarWaterHeater'} className="dropdown-item" >Solar Water Heater</Link></li>
-                                    </ul></div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li className="nav-item d-flex align-item-center justify-content-center">
+                                <Link to={'/blog'} className="nav-link mx-2 contact fw-bold" style={{ margin: 'auto' }} >
+                                    <span className="activeButtonDash">
+                                        <i className="fa-solid fa-minus fa-lg"></i>
+                                    </span>
+                                    Blog
+                                </Link>
+                            </li>
                             <li className="nav-item">
                                 <Link to={'/gallery'} className="nav-link mx-2 contact fw-bold" >
                                     <span className="activeButtonDash"><i className="fa-solid fa-minus fa-lg"></i></span>  Gallery </Link></li>
@@ -96,7 +107,7 @@ export default function Navbar() {
                                 </a><a href="tel:+919518220044" className="socialIcons-call text-white fs-6 mx-2 d-flex align-items-center  justify-content-center " style={{ width: '38px', height: '38px', borderRadius: '50%' }}>
                                     <i className="fa-solid fa-phone"></i>
                                 </a>
-                                <a target="_blank" href="https://wa.me/+919518220044" className="socialIcons-whatsapp fs-5 text-white mx-2 d-flex align-items-center  justify-content-center " style={{ width: '38px', height: '38px', borderRadius: '50%' }}>
+                                <a target="_blank" rel="noreferrer" href="https://wa.me/+919518220044" className="socialIcons-whatsapp fs-5 text-white mx-2 d-flex align-items-center  justify-content-center " style={{ width: '38px', height: '38px', borderRadius: '50%' }}>
                                     <i className="fa-brands fa-whatsapp"></i>
                                 </a>
                                 <div className="socialIcons-instagram fs-5 text-white mx-2 d-flex align-items-center  justify-content-center " style={{ width: '38px', height: '38px', borderRadius: '50%' }}>

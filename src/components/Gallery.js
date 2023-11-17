@@ -58,7 +58,7 @@ export default function Gallery() {
                         <img className="my-2" src={img1} alt="" />
                         <img className="my-2" src={img2} alt="" />
                         <img className="my-2" src={img3} alt="" />
-                        <img className="my-2" src={img4} alt="" />
+                        <img className="my-2" src={img21} alt="" />
                         <img className="my-2" src={img5} alt="" />
                         <img className="my-2" src={img6} alt="" />
                         <img className="my-2" src={img7} alt="" />
@@ -76,11 +76,11 @@ export default function Gallery() {
                         <img className="my-2" src={img16} alt="" />
                         <img className="my-2" src={img17} alt="" />
                         <img className="my-2" src={img18} alt="" />
-                        <img className="my-2" src={img19} alt="" />
                         <img className="my-2" src={img42} alt="" />
+                        <img className="my-2" src={img19} alt="" />
                     </div>
                     <div className="galleryColumn">
-                        <img className="my-2" src={img21} alt="" />
+                        <img className="my-2" src={img4} alt="" />
                         <img className="my-2" src={img21} alt="" />
                         <img className="my-2" src={img22} alt="" />
                         <img className="my-2" src={img23} alt="" />

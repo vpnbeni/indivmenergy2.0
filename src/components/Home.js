@@ -1,93 +1,92 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import project1 from './../img/project1.png'
+import project2 from './../img/project2.png'
+import project3 from './../img/project3.png'
+import project4 from './../img/project4.png'
 export default function Home() {
     return (
         <>
             <div className='home'>
                 {/* intro to indivm */}
-                <div className='introToINDIVM row ' >
+                <div className='introToINDIVM  d-flex' >
                     <span className='solar' style={{ fontSize: '180px', color: '#f7f7f7' }}>SOLAR</span>
-                    <div className='col-7 p-0 m-0 container'>
-                        <div className='investingIsClean'>
-                            <div className="h1 fw-bold" style={{ color: "#232323", fontSize: '57px', }}>Investing in Clean <br />
-                                Energy Generation</div>
-                            <div>Our Investment in emission-free and clean generation has reduced our impact on the air we breathe and demonstrates our commitment.</div>
-                            <div className='d-flex'>
-                                <button className='learnMoreBtn mt-3 me-2'>Learn More</button>
-                                <button className=' mt-3 ms-2 border-0 contactWhatsappBtn' style={{ backgroundColor: 'inherit', fontWeight: 'bold' }}><i className="fa-brands fa-whatsapp fa-lg text-success"></i> Contact on WhatsApp</button>
-                            </div>
+                    <div className='investingIsClean'>
+                        <div className="h1 fw-bold" style={{ color: "#232323", fontSize: '57px', }}>Investing in Clean <br />
+                            Energy Generation</div>
+                        <div className='w-50'>Our Investment in emission-free and clean generation has reduced our impact on the air we breathe and demonstrates our commitment.</div>
+                        <div className='d-flex'>
+                            <button className='learnMoreBtn mt-3 me-2'>Learn More</button>
+                            <button className=' mt-3 ms-2 border-0 contactWhatsappBtn' style={{ backgroundColor: 'inherit', fontWeight: 'bold' }}><i className="fa-brands fa-whatsapp fa-lg text-success"></i> Contact on WhatsApp</button>
                         </div>
                     </div>
-                    <div className='col-5 p-0 m-0'><img style={{ height: '90vh' }} alt="" src={require("../img/pngimg.com - solar_panel_PNG18.png")} /></div>
+                    <div className=' p-0 m-0 introImg' ><img alt="" src={require("../img/pngimg.com - solar_panel_PNG18.png")} /></div>
                 </div>
                 {/* about us */}
-                <div className="container">
-                    <div className=" row">
-                        <div className="col-lg-6">
-                            <div className='d-flex align-items-center my-5'>
-                                <img className='mx-auto' src={require("../img/man-worker-firld-by-solar-panels.png")} style={{ width: '480px', height: '480px' }} alt="" />
-                            </div>
-                            <img className='megawattsOfCapacity' src={require("../img/MEGAWATTS OF CAPACITY.png")} alt="" />
+                <div className="aboutBody d-lg-flex">
+                    <div className="">
+                        <div className='d-flex align-items-center my-5'>
+                            <img className='aboutUsImg ' src={require("../img/man-worker-firld-by-solar-panels.png")} style={{ width: '480px', height: '480px' }} alt="" />
                         </div>
-                        <div className="col-lg-6">
-                            <span className='about' style={{ fontSize: '150px', color: 'white' }}>ABOUT</span>
-
-                            <div className='col-7 p-0 m-0 container'>
-                                <div className='aboutContainer'>
-                                    <div style={{ color: '#57b33e', fontSize: "18px" }}>| who we are</div>
-                                    <div className="h1 fw-bold" style={{ color: "#232323", fontSize: '36px', }}>We are the Best-In-Class Products & Solutions</div>
-                                    <div className='my-2'>iRecco is among the world’s leading renewable energy solutions provider that is revolutionising and redefining the way sustainable energy sources are harnessed across the world. Present in 18 countries across Asia, Australia, Europe, Africa and the Americas, Veztaz is powering a greener tomorrow.</div>
-                                    <div className='aboutDownlaodBtn d-flex justify-items-strat align-items-center'>
-                                        <button className=' border-0 mt-3 me-2 d-flex align-items-center justify-items-center'><i className="fa-solid  fa-circle-down " style={{ color: '#ff7029', fontSize: '55px' }}></i> &nbsp;&nbsp;<span className='fw-bold'> Download Brochoure </span></button>
-                                    </div>
-                                </div>
-                            </div></div>
-
+                        <img className='megawattsOfCapacity ' src={require("../img/MEGAWATTS OF CAPACITY.png")} alt="" />
                     </div>
+                    <div className="">
+                        <span className='about' style={{ color: 'white' }}>ABOUT</span>
+
+                        <div className='col-lg-7 p-0 m-0 '>
+                            <div className='aboutContainer'>
+                                <div style={{ color: '#57b33e', fontSize: "18px" }}>| who we are</div>
+                                <div className="h1 fw-bold" style={{ color: "#232323", fontSize: '36px', }}>We are the Best-In-Class Products & Solutions</div>
+                                <div className='my-2'>iRecco is among the world’s leading renewable energy solutions provider that is revolutionising and redefining the way sustainable energy sources are harnessed across the world. Present in 18 countries across Asia, Australia, Europe, Africa and the Americas, Veztaz is powering a greener tomorrow.</div>
+                                <div className='aboutDownlaodBtn d-flex justify-items-strat align-items-center'>
+                                    <button className=' border-0 mt-3 me-2 d-flex align-items-center justify-items-center'><i className="fa-solid  fa-circle-down " style={{ color: '#ff7029', fontSize: '55px' }}></i> &nbsp;&nbsp;<span className='fw-bold'> Download Brochoure </span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 {/* why choose us */}
                 <div className="container my-lg-5 d-block">
                     <div className=" row mb-5">
 
-                        <div className="col-lg-6">
-                            <span className='about' style={{ fontSize: '150px', color: 'white' }}>WHY US</span>
+                        <div className="col-lg-6 ">
+                            <span className='whyUs' style={{ fontSize: '150px', color: 'white' }}>WHY US</span>
 
-                            <div className='col-7 p-0 m-0 container'>
-                                <div className='aboutContainer'>
-                                    <div style={{ color: '#57b33e', fontSize: "18px" }}>| why choose us</div>
-                                    <div className="h1 fw-bold" style={{ color: "#232323", fontSize: '36px', }}>We are Building
-                                        a Sustainable Future
+                            <div className='whyContainer'>
+                                <div style={{ color: '#57b33e', fontSize: "18px" }}>| why choose us</div>
+                                <div className="h1 fw-bold" style={{ color: "#232323", fontSize: '36px', }}>We are Building
+                                    a Sustainable Future
+                                </div>
+
+                                <div className='my-5 py-lg-3'>
+                                    <div className="row my-lg-2 whyUsData">
+                                        <div className="col-2 d-flex justify-items-center"><div className='shadow d-flex align-items-center justify-items-center' style={{ width: '40px', height: '40px', borderRadius: '50%' }}> <i className="fa-solid mx-auto  fa-check " style={{ fontSize: '18px', color: '#ff7029' }}></i></div></div>
+                                        <div className="col-10">
+                                            <div className="fw-bold">Best Energy Solutions</div>
+                                            <div className="my-2" style={{ color: '#616161' }}>Over two decades of rich experience in the wind energy sector. Over 17,900 MW capacity.</div>
+                                        </div>
                                     </div>
-
-                                    <div className='my-5 py-lg-3'>
-                                        <div className="row my-lg-2 whyUsData">
-                                            <div className="col-2 d-flex justify-items-center"><div className='shadow d-flex align-items-center justify-items-center' style={{ width: '40px', height: '40px', borderRadius: '50%' }}> <i className="fa-solid mx-auto  fa-check " style={{ fontSize: '18px', color: '#ff7029' }}></i></div></div>
-                                            <div className="col-10">
-                                                <div className="fw-bold">Best Energy Solutions</div>
-                                                <div className="my-2" style={{ color: '#616161' }}>Over two decades of rich experience in the wind energy sector. Over 17,900 MW capacity.</div>
-                                            </div>
+                                    <div className="row my-lg-2 whyUsData">
+                                        <div className="col-2 d-flex justify-items-center"><div className='shadow d-flex align-items-center justify-items-center' style={{ width: '40px', height: '40px', borderRadius: '50%' }}> <i className="fa-solid mx-auto  fa-check " style={{ fontSize: '18px', color: '#ff7029' }}></i></div></div>
+                                        <div className="col-10">
+                                            <div className="fw-bold">End-To-End Services</div>
+                                            <div className="my-2" style={{ color: '#616161' }}>Vast experience in power evacuation, land pro curement, liaisoning and working with state.</div>
                                         </div>
-                                        <div className="row my-lg-2 whyUsData">
-                                            <div className="col-2 d-flex justify-items-center"><div className='shadow d-flex align-items-center justify-items-center' style={{ width: '40px', height: '40px', borderRadius: '50%' }}> <i className="fa-solid mx-auto  fa-check " style={{ fontSize: '18px', color: '#ff7029' }}></i></div></div>
-                                            <div className="col-10">
-                                                <div className="fw-bold">End-To-End Services</div>
-                                                <div className="my-2" style={{ color: '#616161' }}>Vast experience in power evacuation, land pro curement, liaisoning and working with state.</div>
-                                            </div>
+                                    </div>
+                                    <div className="row my-lg-2 whyUsData">
+                                        <div className="col-2 d-flex justify-items-center"><div className='shadow d-flex align-items-center justify-items-center' style={{ width: '40px', height: '40px', borderRadius: '50%' }}> <i className="fa-solid mx-auto  fa-check " style={{ fontSize: '18px', color: '#ff7029' }}></i></div></div>
+                                        <div className="col-10">
+                                            <div className="fw-bold">Global Expertise</div>
+                                            <div className="my-2" style={{ color: '#616161' }}>A perfect blend of global experience and expertise to further our focus on technology. advancement.</div>
                                         </div>
-                                        <div className="row my-lg-2 whyUsData">
-                                            <div className="col-2 d-flex justify-items-center"><div className='shadow d-flex align-items-center justify-items-center' style={{ width: '40px', height: '40px', borderRadius: '50%' }}> <i className="fa-solid mx-auto  fa-check " style={{ fontSize: '18px', color: '#ff7029' }}></i></div></div>
-                                            <div className="col-10">
-                                                <div className="fw-bold">Global Expertise</div>
-                                                <div className="my-2" style={{ color: '#616161' }}>A perfect blend of global experience and expertise to further our focus on technology. advancement.</div>
-                                            </div>
-                                        </div>
-
                                     </div>
 
                                 </div>
+
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 ">
 
                             <img className='enhancedServices' src={require("../img/Enhanced Services.png")} alt="" />
                             <img className='man-worker-firld-by-solar' src={require("../img/man-worker-firld-by-solar.png")} style={{ width: '285px', height: '285px' }} alt="" />
@@ -100,27 +99,19 @@ export default function Home() {
 
                 {/* works recent projects */}
 
-                <div className='recentProjects' style={{ height: '110vh' }}>
+                <div className='recentProjects'>
                     <div className="text-center works" style={{ fontSize: '150px', color: '#f8f8f8' }}>WORKS</div>
 
-                    <div className="text-center position-relative recentProjectsHeading" style={{ zIndex: '1', height: '200px' }}>
+                    <div className="text-center recentProjectsHeading" style={{ zIndex: '1', height: '200px' }}>
                         <div className="" style={{ color: '#57b33e', fontSize: "18px" }}>recent projects</div>
                         <div className="fw-bold " style={{ color: "#232323", fontSize: '36px', }}>Our Latest Case Studies</div>
                         <div className="my-2 " style={{ color: '#616161' }}>All functions including supply chain, value chain, project scheduling, manufacturing, services and <br /> spares, technology, R&D, etc. are integrated to give a complete solutions package.</div>
                     </div>
-                    <div className="galleryRow my-lg-5 my-2">
-                        <div className="galleryColumn">
-                            <img src="/static/media/project1.a3e833877c8878452d49.png" alt="" />
-                        </div>
-                        <div className="galleryColumn">
-                            <img src="/static/media/project2.57ded9c304cde564fd38.png" alt="" />
-                        </div>
-                        <div className="galleryColumn">
-                            <img src="/static/media/project5.697e3f7d79d762b4b3f8.png" alt="" />
-                        </div>
-                        <div className="galleryColumn">
-                            <img src="/static/media/project3.afba13c24ebda561b509.png" alt="" />
-                        </div>
+                    <div className="flex-container my-lg-5 my-2">
+                        <img className='w-lg-25' src={project1} alt="" />
+                        <img className='w-lg-25' src={project2} alt="" />
+                        <img className='w-lg-25' src={project3} alt="" />
+                        <img className='w-lg-25' src={project4} alt="" />
                     </div>
 
                 </div>
@@ -128,12 +119,12 @@ export default function Home() {
 
                 <div className=" someBasics text-center w-100 " style={{ color: 'white' }}>Basics </div>
                 < div className="someBasicsOnSolarSystem" style={{ display: 'block' }}>
-                    <div className="text-center mt-lg-0  mt-2 position-relative recentProjectsHeading" style={{ zIndex: '1' }}>
+                    <div className="text-center mt-lg-0  mt-2  basicSolarSystem" style={{ zIndex: '1' }}>
                         <div className="" style={{ color: 'rgb(87, 179, 62)', fontSize: '18px' }}>Solar System</div>
                         <div className="fw-bold " style={{ color: ' rgb(35, 35, 35)', fontSize: '36px' }} >All You Need To Know
                         </div>
                     </div>
-                    <ul className="mx-md-5 mx-2 px-md-5">
+                    <ul className="someBasicsBody">
                         <li>Solar technology is fast developing like several other such as Mobile phones, Computers etc. There are new products/Systems every day in the market.</li>
                         <li>Power generated from Solar System is directly proportional to the sun shine/rays falling on Solar panels. This results in less power generation in cloudy sky, mornings and evenings as compared noon time.</li>
                         <li>Presently there are three types of Solar Systems:
@@ -167,24 +158,24 @@ export default function Home() {
                 {/* clients */}
                 <div div className="clientsbody" style={{ minHeight: '1vh', display: 'block', overflow: 'none', height: '130vh' }
                 }>
-                    <div className='turbineBackground'>
-                        <img className='' src={require('../img/turbine background.png')} alt="" />
-                    </div>
+
                     <div className=" clients" style={{ fontSize: '150px', color: 'white' }}>CLIENTS</div>
-                    <img className='clientReviewing' src={require("../img/clients reviewing.png")} alt="" />
-                    <div className="someFacts p-5">
-                        <div className="my-5">
-                            <div className="fw-bold" style={{ color: '#57b33e', fontSize: "18px" }}>| some facts</div>
-                            <div className="fw-bold " style={{ color: "white", fontSize: '36px', }}>Clients Testimonials</div>
-                        </div>
-                        <div className="my-2 " style={{ color: '#cfd1d7', fontSize: "19px" }}>All functions including supply chain, value chain, project scheduling, manufacturing, services and <br /> spares, technology, R&D, etc. are integrated to give a complete solutions package.</div>
-                        <div className='my-5'>
-                            <div className="fw-bold" style={{ color: 'white', fontSize: "18px" }}>Arnold Wilson</div>
-                            <div className="my-2 " style={{ color: '#cfd1d7', fontSize: "19px" }}>Client Of Company</div>
-                        </div>
-                        <div className="someFactsPages">
-                            <button className='border-0 py-2 px-3' style={{ backgroundColor: '#ff7029' }}><i className="fa-solid fa-lg fa-angle-left" style={{ color: 'white' }}></i></button>
-                            <button className='border-0 py-2 px-3' style={{ backgroundColor: '#ff7029' }}><i className="fa-solid fa-lg fa-angle-right" style={{ color: 'white' }}></i></button>
+                    <div className='d-lg-flex  w-100'>
+                        <img className='clientReviewing' src={require("../img/clients reviewing.png")} alt="" />
+                        <div className="someFacts p-5">
+                            <div className="my-5">
+                                <div className="fw-bold" style={{ color: '#57b33e', fontSize: "18px" }}>| some facts</div>
+                                <div className="fw-bold " style={{ color: "white", fontSize: '36px', }}>Clients Testimonials</div>
+                            </div>
+                            <div className="my-2 " style={{ color: '#cfd1d7', fontSize: "19px" }}>All functions including supply chain, value chain, project scheduling, manufacturing, services and <br /> spares, technology, R&D, etc. are integrated to give a complete solutions package.</div>
+                            <div className='my-5'>
+                                <div className="fw-bold" style={{ color: 'white', fontSize: "18px" }}>Arnold Wilson</div>
+                                <div className="my-2 " style={{ color: '#cfd1d7', fontSize: "19px" }}>Client Of Company</div>
+                            </div>
+                            <div className="someFactsPages">
+                                <button className='border-0 py-2 px-3' style={{ backgroundColor: '#ff7029' }}><i className="fa-solid fa-lg fa-angle-left" style={{ color: 'white' }}></i></button>
+                                <button className='border-0 py-2 px-3' style={{ backgroundColor: '#ff7029' }}><i className="fa-solid fa-lg fa-angle-right" style={{ color: 'white' }}></i></button>
+                            </div>
                         </div>
                     </div>
                     <div className=" say" style={{ fontSize: '150px', color: 'white' }}>SAY</div>
@@ -193,7 +184,7 @@ export default function Home() {
 
                 <div className='contactUsTag d-flex'>
                     <div className="parallax parallax-home p-lg-5 text-white d-block d-lg-flex d-md-flex align-items-center justify-content-center">
-                        <div className="mx-auto">
+                        <div className="mx-auto ">
                             <h2 className="fw-bold ">Have Questions? We are Here to Help You!</h2>
                             <h6 className="">IRecco is among the world’s leading renewable energy solutions provider.</h6>
                         </div>
